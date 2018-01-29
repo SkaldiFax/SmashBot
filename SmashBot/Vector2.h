@@ -11,6 +11,7 @@ namespace FAX {
 		Vector2(float i_x, float i_y);
 
 		Vector2& operator=(const Vector2& value);
+		Vector2& operator*=(const float factor);
 	};
 
 	Vector2 operator+(const Vector2& left, const Vector2& right);

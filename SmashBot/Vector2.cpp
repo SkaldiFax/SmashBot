@@ -38,4 +38,11 @@ namespace FAX {
 
 		return *this;
 	}
+
+	Vector2& Vector2::operator*=(const float factor)
+	{
+		this->x *= factor;
+		this->y *= factor;
+		return *this;
+	}
 }

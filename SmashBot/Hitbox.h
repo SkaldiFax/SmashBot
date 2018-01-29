@@ -2,6 +2,7 @@
 #define FAX_HITBOX_H
 
 #include "Vector2.h"
+#include "RenderService.h"
 #include <SFML/Graphics.hpp>
 
 namespace FAX {
@@ -13,7 +14,7 @@ namespace FAX {
 	public:
 		Hitbox(Vector2 origin, Vector2 size);
 
-		void render(sf::RenderTarget& renderTarget);
+		void render(RenderService& renderService);
 	};
 }
 
